@@ -1,7 +1,7 @@
 from flask import Flask
 
 from py_boban_rajovic_song_injector.models import db
-from py_boban_rajovic_song_injector.injector import BobanRajovicSongInjector
+from py_boban_rajovic_song_injector import BobanRajovicSongInjector
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///songs.db'
